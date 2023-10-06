@@ -11,8 +11,8 @@ DIR = getwd()
 ## ==============
 ## preprocessing
 ## ==============
-dataset.name = "autoMPG6"
-# dataset.name = "real-estate"
+# dataset.name = "autoMPG6"
+dataset.name = "real-estate"
 
 ## loading dataset
 Z = read.csv(paste0(DIR,"/datasets/",dataset.name,".csv"), header=TRUE, sep=";")
