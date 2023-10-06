@@ -11,8 +11,8 @@ DIR = getwd()
 ## ==============
 ## preprocessing
 ## ==============
-# dataset.name = "autoMPG6"
-dataset.name = "real-estate"
+dataset.name = "autoMPG6"
+# dataset.name = "real-estate"
 
 ## loading dataset
 Z = read.csv(paste0(DIR,"/datasets/",dataset.name,".csv"), header=TRUE, sep=";")
@@ -52,6 +52,7 @@ g_discrete = round(data$g)
 ## N3POM
 N3POM = NNOLM(data=data, L=L, 
                initial_sd=1, do_monitor=TRUE, exponent=0.5,
+               shows_progress_bar=TRUE,
                n_GD=n_GD, 
                minibatch_size=minibatch_size, 
                theta0=theta0,

@@ -1,5 +1,3 @@
-# require("progress")
-
 R = 10
 
 ## points j1, j2, ..., jR
@@ -353,8 +351,10 @@ NNOLM <- function(data=NULL, L=100, initial_sd=1, exponent = 0.5,
                   initial_lr = 1,
                   decreasing_interval=100, decreasing_rate=0.85, 
                   do_monitor=TRUE, 
+                  shows_progress_bar=FALSE,
                   continuization=FALSE){
   
+  if(shows_progress_bar) require("progress")
   if(is.null(data)) stop("invalid data")
   if(continuization){
     mmcut <- function(u){
@@ -397,9 +397,13 @@ NNOLM <- function(data=NULL, L=100, initial_sd=1, exponent = 0.5,
     names(monitor) = c("iteration","log_likelihood")
   }
   
+  if(shows_progress_bar) pb <- progress_bar$new(total = n_GD)
+  
   ## Optimization via full-batch gradient descent
   for(iteration in 1:n_GD){
 
+    if(shows_progress_bar) pb$tick()
+    
     minibatch_ind = sort(sample(1:data$n)[1:minibatch_size])
     
     theta_tmp = theta
