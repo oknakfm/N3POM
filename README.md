@@ -15,7 +15,7 @@ This repository provides R Source codes to reproduce numerical experiments in th
 ```
 
 ## Main scripts
-### <a href="https://github.com/oknakfm/N3POM/blob/main/0-illustration.R">0-illustration.R</a>
+### <a href="https://github.com/oknakfm/N3POM/blob/main/0-demonstration.R">0-demonstration.R</a>
 You can train N3POM and plot the estimated coefficient functions (for one instance). Please replace the dataset if you want (default: real-estate).
 
 ### <a href="https://github.com/oknakfm/N3POM/blob/main/1-synthetic.R">1-synthetic.R</a>
