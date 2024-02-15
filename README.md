@@ -2,15 +2,15 @@
 This repository provides R Source codes to reproduce numerical experiments in the following arXiv preprint:
 
 ```
-@article{okuno2023N3POM,
-    year      = {2023},
-    publisher = {CoRR},
+@article{okuno2024N3POM,
+    year      = {2024},
+    publisher = {Taylor & Francis},
     volume    = {},
     number    = {},
     pages     = {},
     author    = {Akifumi Okuno and Kazuharu Harada},
-    title     = {An interpretable neural network-based non-proportional odds model for ordinal regression with continuous response},
-    journal   = {arXiv preprint arXiv:2303.17823}
+    title     = {An interpretable neural network-based non-proportional odds model for ordinal regression},
+    journal   = {Journal of Computational and Graphical Statistics}
 }
 ```
 
