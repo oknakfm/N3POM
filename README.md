@@ -4,7 +4,7 @@ This repository provides R Source codes to reproduce numerical experiments in th
 ```
 @article{okuno2024N3POM,
     year      = {2024},
-    publisher = {Taylor & Francis},
+    publisher = {Taylor \& Francis},
     volume    = {33},
     number    = {},
     issue     = {4},
