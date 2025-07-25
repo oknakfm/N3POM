@@ -1,15 +1,16 @@
 # Overview
-This repository provides R Source codes to reproduce numerical experiments in the following arXiv preprint:
+This repository provides R Source codes to reproduce numerical experiments in the following manuscript:
 
 ```
 @article{okuno2024N3POM,
     year      = {2024},
     publisher = {Taylor & Francis},
-    volume    = {},
+    volume    = {33},
     number    = {},
-    pages     = {},
+    issue     = {4},
+    pages     = {1454-1463},
     author    = {Akifumi Okuno and Kazuharu Harada},
-    title     = {An interpretable neural network-based non-proportional odds model for ordinal regression},
+    title     = {An Interpretable Neural Network-based Nonproportional Odds Model for Ordinal Regression},
     journal   = {Journal of Computational and Graphical Statistics}
 }
 ```
